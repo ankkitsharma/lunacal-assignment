@@ -6,6 +6,8 @@
   --background: linear-gradient(180deg, #373e44 -100%, #191b1f 100%);
 
   --foreground: #363c43;
+
+  --frame: linear-gradient(327.89deg, #4a4e54 -1.73%, #a3adba 89.26%);
 }
 
 .hr {
@@ -16,6 +18,14 @@
     ),
     linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
   box-shadow: 0px 4px 4px 0px #00000054;
+}
+
+.bgFrame {
+  background-color: #363c43;
+  background-repeat: no-repeat;
+  background-image: url(../../public/frame.svg);
+  background-position: 20px 12px;
+  background-size: 24px 50%;
 }
 
 body {

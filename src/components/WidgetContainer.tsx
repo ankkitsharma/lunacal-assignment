@@ -1,12 +1,11 @@
-import FirstWidget from "./FirstWidget";
-import SecondWidget from "./SecondWidget";
+import Widget from "./Widget";
+import AboutSection from "./AboutSection/AboutSection";
 
 export default function WidgetContainer() {
   return (
-    <div className="h-full w-full">
-      <FirstWidget />
-      <div className={`w-[612px] h-1 rounded-[2.46px] hr`}></div>
-      <SecondWidget />
+    <div className="h-full w-full flex flex-col justify-between items-center gap-[41px]">
+      <Widget body={<AboutSection />} />
+      <Widget />
     </div>
   );
 }
