@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: linear-gradient(180deg, #373e44 -100%, #191b1f 100%);
+
+  --foreground: #363c43;
+}
+
+.hr {
+  background: linear-gradient(
+      180deg,
+      rgba(40, 40, 40, 0.1) 0%,
+      rgba(248, 248, 248, 0.1) 100%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+  box-shadow: 0px 4px 4px 0px #00000054;
+}
+
+body {
+  color: white;
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
