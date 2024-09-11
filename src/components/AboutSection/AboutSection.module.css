@@ -13,6 +13,26 @@
   transform: scaleX(0);
 }
 
-.btn:hover::before {
+.btn.notActive:hover::before {
   transform: scaleX(1);
+}
+
+.btn.active {
+  background-color: #28292f;
+
+  box-shadow: 13.49px 16.87px 67.47px 8.43px #0a0a0a,
+    -8.43px -16.87px 50.6px -16.87px #485b71;
+}
+
+.btn.active {
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(var(--x));
+  }
+  to {
+    transform: translateX(0);
+  }
 }
