@@ -5,7 +5,7 @@ import CustomCarousel from "./CustomCarousel";
 
 export default function Gallery() {
   return (
-    <div className="flex flex-col justify-between h-full relative">
+    <div className="flex flex-col items-center gap-12 h-full relative">
       <GalleryButtons />
       <CustomCarousel />
     </div>
