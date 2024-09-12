@@ -46,6 +46,10 @@
   transform: rotateZ(-2deg) scale3d(1.06, 1.09, 1);
 }
 
+.galleryBtnShadow {
+  box-shadow: 0px 4px 10px 2px #00000040 inset;
+}
+
 body {
   color: white;
   background: var(--background);

@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils";
 import styles from "./AboutSection.module.css";
 import { useState } from "react";
+import { poppins } from "@/lib/fonts";
 
 export default function ButtonContainer() {
   const [activeBtn, setactiveBtn] = useState("btn1");
@@ -20,7 +21,12 @@ export default function ButtonContainer() {
     setactiveBtn(id);
   }
   return (
-    <div className="w-full min-h-9 h-[20%] bg-[#171717] rounded-[23px] p-2 flex justify-between items-center gap-2 mb-[35px]">
+    <div
+      className={cn(
+        "w-full min-h-16 h-[20%] bg-[#171717] rounded-[23px] text-[1.1rem] font-semibold p-2 flex justify-between items-center gap-2 mb-[35px]",
+        poppins.className
+      )}
+    >
       <Button
         body="About Me"
         id="btn1"

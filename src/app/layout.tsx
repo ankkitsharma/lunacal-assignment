@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { jakartaSans } from "@/lib/fonts";
 import "./globals.css";
 import { FileProvider } from "@/lib/context/FileProvider";
 
@@ -26,9 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={jakartaSans.className}>
         <FileProvider>{children}</FileProvider>
       </body>
     </html>
