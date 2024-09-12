@@ -12,6 +12,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 export default function CarouselSize() {
   const [ImageGallery, setImageGallery] = React.useState([
@@ -58,7 +59,7 @@ export default function CarouselSize() {
     >
       <CarouselContent className="gap-4">
         {ImageGallery.map((item, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={index} className="basis-[32%] lg:basis-[32.333%]">
             <Image
               src={item}
               height={190}
@@ -69,8 +70,18 @@ export default function CarouselSize() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="absolute top-[6%] right-[15%]" />
-      <CarouselNext className="absolute top-[6%] right-[5%]" />
+      <CarouselPrevious
+        className={cn(
+          "absolute top-[3.5%] right-[15%] w-11 h-11",
+          styles.navButton
+        )}
+      />
+      <CarouselNext
+        className={cn(
+          "absolute top-[3.5%] right-[5%] w-11 h-11",
+          styles.navButton
+        )}
+      />
     </Carousel>
   );
 }

@@ -4,7 +4,7 @@ import WidgetContainer from "@/components/WidgetContainer";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)] h-screen flex justify-between gap-14 pt-24 pl-[29px] pr-[86px] pb-[110px]">
+    <div className="font-[family-name:var(--font-geist-sans)] h-full flex justify-center gap-14 flex-wrap pt-24 pl-[29px] pr-[29px] lg:pr-[86px] pb-[110px]">
       <EmptyContainer />
       <WidgetContainer />
     </div>

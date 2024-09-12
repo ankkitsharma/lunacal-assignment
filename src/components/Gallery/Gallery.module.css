@@ -1,4 +1,24 @@
-.customPrev {
+/* .customPrev {
   top: 0;
   right: 0;
+} */
+
+.navButton {
+  background: linear-gradient(139.14deg, #303439 12.4%, #161718 94.96%);
+  /* box-shadow: 4px 5px 30px 5px #101213, -5px -3px 30px -10px #96bee7; */
+  box-shadow: -5px -3px 30px -10px #96bee7, 4px 5px 30px 5px #101213;
+}
+
+.navButton:active {
+  background: rgb(130, 163, 201);
+  background: linear-gradient(
+    141deg,
+    rgba(130, 163, 201, 1) 33%,
+    rgba(87, 125, 144, 1) 56%,
+    rgba(34, 38, 38, 1) 83%
+  );
+}
+
+.navButton:active svg {
+  color: white;
 }

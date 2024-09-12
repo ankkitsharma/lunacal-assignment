@@ -4,7 +4,7 @@ import Gallery from "./Gallery/Gallery";
 
 export default function WidgetContainer() {
   return (
-    <div className="h-full w-full flex flex-col justify-between items-center gap-[41px]">
+    <div className="h-full max-w-[52.25rem] min-w-[37rem] w-full flex flex-col flex-1 justify-between items-center gap-[41px]">
       <Widget body={<AboutSection />} />
       <Widget body={<Gallery />} />
     </div>
